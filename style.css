@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-row {
+  background-color: #FFBD33;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1::after {
+  content: "";
+  background: black;
+  display: block;
+  height: 3px;
+  margin: 15px auto;
+}
+
+.price-table {
+  padding: 60px;
+}
+.logo {
+  transform: rotate(-45deg);
+  background: #FFD533 ;
+  color: black;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  border-radius: 9px;
+  padding: 2px 11px;
+}
+
+.compnay-name {
+  margin-top: 0.5rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  background-color: #f2f2f2;
+  font-size: 20px;
+  width: 100%;
+
+  font-weight: bold;
+}
+
+
+
+.single-price {
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  background: #e6e6e6;
+  transition: 0.5s;
+}
+
+.single-price{
+  background-color: #f2f2f2;
+}
+
+.single-price:hover {
+  box-shadow: 0 2px 20px #a6a6a6;
+}
+
+.price-head {
+  background: #efeffa;
+  /* display: flex; */
+  text-align: center;
+  width: 100%;
+}
+
+.price-head h2 {
+  margin-top: 0.8rem;
+
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.price-head p {
+  margin-top: 1rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 30px;
+  
+}
+.price-head span {
+  font-size: 3rem;
+}
+.price-head a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.price-head #black{
+  color: black;
+  font-weight: bold;
+}
+
+
+.price-head a:hover::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+span {
+  font-size: 15px;
+}
+
+.price-content {
+  display: flex;
+  width: 100%;
+  padding: 0 15px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.price-content p {
+  /* word-spacing: 0; */
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
+  font-weight: bold;
+}
+
+.price-button {
+  /* display: block; */
+
+  color: white;
+  margin: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.price-button a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  border-bottom: 1px solid #fff;
+  pad: 15px 10px;
+  list-style: none;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+@media screen and(max-width:1000px) {
+  .container {
+    flex: 50%;
+  }
+}
